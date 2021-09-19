@@ -52,7 +52,7 @@ jobs:
           args: 'build "-s zmk/app -b nice_nano_v2 -- -DSHIELD=corne_left -DZMK_CONFIG=/github/workspace/config"'
       - name: Corne DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
+        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
       - name: Corne Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
