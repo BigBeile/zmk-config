@@ -35,6 +35,11 @@
             key-positions = <1 2>;
             bindings = <&kp TAB>;
         };
+         combo_bspc {
+             timeout-ms = <27>;
+            key-positions = <7 8>;
+            bindings = <&kp BSPC>;
+        };
     };
 };
 
